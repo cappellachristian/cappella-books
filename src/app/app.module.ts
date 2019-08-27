@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
-import { Book } from './book.model.ts/book.model.ts.component';
+import{NgModule} from '@angular/core';
 import { RecensioneComponent } from './recensione/recensione.component';
 import { ReviewComponent } from './review/review.component';
+import { BookListComponent } from './book-list/book-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Book.Model.TsComponent,
     RecensioneComponent,
-    ReviewComponent
+    ReviewComponent,
+    BookListComponent
   ],
-  imports: [
-    BrowserModule
+ imports: [
+    BrowserModule,NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
